@@ -3,10 +3,10 @@ export const projects = [
     title: '#HARTA',
     stack: ['React', 'Node.js', 'Express', 'PostgreSQL'],
     description:
-      'Full-stack e-commerce platform for a beverageware brand, including product catalog, cart, checkout flow, authentication, admin management and Mercado Pago integration.',
-    demoUrl: '', // Replace with the public #HARTA demo URL when it is ready.
+      'Full-stack e-commerce platform for a beverageware brand, including product catalog, authentication, cart, checkout flow, admin dashboard, stock management and Mercado Pago integration.',
+    demoUrl: '', // Add the public #HARTA demo URL here when it is ready.
     githubUrl: 'https://github.com/Eduman8/-Harta-web',
-    image: 'https://res.cloudinary.com/dbkfkpjjl/image/upload/v1778620946/Screenshot_2026-05-12_182148_p0hr6m.png', // Replace this file or path with the final #HARTA screenshot.
+    image: 'https://res.cloudinary.com/dbkfkpjjl/image/upload/v1778620946/Screenshot_2026-05-12_182148_p0hr6m.png', // Replace this path with the final #HARTA screenshot.
     status: 'In Development',
     overlayLabel: 'Live Demo Coming Soon',
     overlayIcon: '✦',
@@ -15,29 +15,35 @@ export const projects = [
   },
   {
     title: 'Countries PI',
-    stack: ['React', 'CSS', 'REST API'],
+    stack: ['React', 'Redux', 'CSS', 'REST API'],
     description:
-      'React application focused on country search, filtering, sorting and detail pages, built with a clean user interface and API integration.',
-    demoUrl: 'https://countries-nine-liard.vercel.app/', 
-    githubUrl: 'https://github.com/Eduman8/PI-Countries', 
-    image: 'https://res.cloudinary.com/dbkfkpjjl/image/upload/v1778621409/Screenshot_2026-05-12_at_18-29-40_Henry_Countries_cytolr.png', 
-    imagePosition: 'center top',
-    demoLabel: 'Live demo',
+      'Country explorer built with React, Redux and REST API integration, featuring search, filters, sorting, pagination, detail pages and tourist activity creation.',
+    demoUrl: 'https://countries-nine-liard.vercel.app/',
+    githubUrl: 'https://github.com/Eduman8/PI-Countries',
+    image: 'https://res.cloudinary.com/dbkfkpjjl/image/upload/v1778621409/Screenshot_2026-05-12_at_18-29-40_Henry_Countries_cytolr.png',
+    imagePosition: 'center 16%',
+    demoLabel: 'Live Demo',
     demoAvailable: true,
   },
 ];
 
-export const skills = [
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node.js',
-  'Express',
-  'PostgreSQL',
-  'HTML',
-  'CSS',
-  'Responsive Design',
-  'REST APIs',
-  'Git',
-  'GitHub',
+export const skillGroups = [
+  {
+    label: 'Frontend',
+    skills: ['JavaScript', 'React', 'Redux', 'HTML', 'CSS', 'Responsive Design'],
+  },
+  {
+    label: 'Backend',
+    skills: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL'],
+  },
+  {
+    label: 'Tools',
+    skills: ['Git', 'GitHub'],
+  },
 ];
+
+export const contactLinks = {
+  email: 'mailto:eduman.000@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/eduardo-dami%C3%A1n-g%C3%B3mez-89a432217/',
+  github: 'https://github.com/Eduman8',
+};
