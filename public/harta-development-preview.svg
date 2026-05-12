@@ -1,0 +1,60 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">#HARTA project in development preview</title>
+  <desc id="desc">A cinematic ecommerce brand preview for #HARTA showing product cards, checkout elements and development status.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120B14"/>
+      <stop offset="0.5" stop-color="#211728"/>
+      <stop offset="1" stop-color="#0B111D"/>
+    </linearGradient>
+    <linearGradient id="card" x1="168" y1="94" x2="1010" y2="646" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D2035"/>
+      <stop offset="1" stop-color="#111A28"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="180" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE2A8"/>
+      <stop offset="0.5" stop-color="#D59B5B"/>
+      <stop offset="1" stop-color="#7A452C"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(304 152) rotate(55) scale(469 379)">
+      <stop stop-color="#E7B16F" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#E7B16F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="90" y="70" width="1020" height="662" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="34" stdDeviation="38" flood-color="#000000" flood-opacity="0.46"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="44" fill="url(#bg)"/>
+  <circle cx="300" cy="160" r="360" fill="url(#spot)"/>
+  <circle cx="980" cy="628" r="280" fill="#8FB4FF" fill-opacity="0.1"/>
+  <g filter="url(#shadow)">
+    <rect x="132" y="102" width="936" height="556" rx="36" fill="url(#card)" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="166" y="136" width="868" height="74" rx="24" fill="#070A10" fill-opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <text x="204" y="184" fill="#FFF6EA" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="-.8">#HARTA</text>
+    <text x="836" y="181" fill="#D9B178" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">Cart · Checkout · Admin</text>
+
+    <text x="196" y="302" fill="#FFF7EF" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900" letter-spacing="-2.4">Premium drinkware</text>
+    <text x="198" y="343" fill="#D9C8B9" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="600">E-commerce experience currently being polished.</text>
+    <rect x="198" y="388" width="156" height="48" rx="24" fill="#E7B16F" fill-opacity="0.18" stroke="#E7B16F" stroke-opacity="0.38"/>
+    <text x="226" y="419" fill="#FFE4B8" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="850">Build mode</text>
+
+    <g transform="translate(694 254)">
+      <rect width="214" height="294" rx="32" fill="#FFFFFF" fill-opacity="0.1" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <rect x="48" y="40" width="118" height="154" rx="28" fill="url(#amber)"/>
+      <rect x="73" y="18" width="68" height="38" rx="16" fill="#221520" stroke="#FFE2A8" stroke-opacity="0.25"/>
+      <rect x="40" y="220" width="134" height="16" rx="8" fill="#FFEBD1" fill-opacity="0.82"/>
+      <rect x="62" y="248" width="90" height="12" rx="6" fill="#CDA172" fill-opacity="0.75"/>
+    </g>
+    <g transform="translate(474 430)" opacity="0.78">
+      <rect width="164" height="116" rx="26" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <rect x="24" y="28" width="116" height="14" rx="7" fill="#F0C891" fill-opacity="0.7"/>
+      <rect x="24" y="58" width="86" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.26"/>
+      <rect x="24" y="84" width="116" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.16"/>
+    </g>
+    <g transform="translate(842 392)" opacity="0.86">
+      <rect width="142" height="156" rx="28" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.1"/>
+      <path d="M39 54H103L92 108H50L39 54Z" fill="#8FB4FF" fill-opacity="0.22" stroke="#BFD1FF" stroke-opacity="0.42" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M55 54C55 39 64 30 72 30C80 30 89 39 89 54" stroke="#BFD1FF" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
