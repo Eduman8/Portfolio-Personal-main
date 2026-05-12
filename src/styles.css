@@ -217,8 +217,8 @@ p {
 .hero {
   display: flex;
   align-items: center;
-  min-height: calc(100vh - var(--header-height));
-  padding: 120px 0;
+  min-height: calc(88vh - var(--header-height));
+  padding: 96px 0;
   background:
     radial-gradient(circle at top right, var(--hero-accent), transparent 34rem),
     var(--color-background);
@@ -243,16 +243,17 @@ h2,
 h3 {
   color: var(--color-text);
   letter-spacing: -0.045em;
-  line-height: 1.08;
+  line-height: 1.06;
 }
 
 h1 {
-  margin-bottom: 14px;
-  font-size: clamp(2.8rem, 8vw, 5.4rem);
+  margin-bottom: 10px;
+  font-size: clamp(2.45rem, 7.1vw, 4.75rem);
+  line-height: 1.01;
 }
 
 .hero h2 {
-  margin-bottom: 24px;
+  margin-bottom: 14px;
   color: var(--color-text-muted);
   font-size: clamp(1.45rem, 4vw, 2.35rem);
   font-weight: 700;
@@ -260,8 +261,8 @@ h1 {
 
 .hero-description {
   max-width: 660px;
-  margin-bottom: 36px;
-  font-size: clamp(1.05rem, 2.5vw, 1.28rem);
+  margin-bottom: 30px;
+  font-size: clamp(1.02rem, 2.2vw, 1.22rem);
 }
 
 .hero-actions,
@@ -423,14 +424,14 @@ h1 {
   overflow: hidden;
   height: clamp(250px, 28vw, 330px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: var(--color-surface-soft);
+  background:
+    linear-gradient(135deg, rgba(143, 180, 255, 0.08), transparent 42%),
+    var(--color-surface-soft);
 }
 
 .project-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
   opacity: 0.94;
   transform: scale(1);
   transition:
@@ -438,9 +439,30 @@ h1 {
     transform 420ms ease;
 }
 
+.project-image--cover {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.project-image--contain {
+  padding: 10px;
+  object-fit: contain;
+  object-position: top center;
+  background:
+    linear-gradient(180deg, rgba(var(--color-background-rgb), 0.1), rgba(var(--color-background-rgb), 0.36)),
+    var(--color-surface-soft);
+}
+
+.project-card:hover .project-image--cover {
+  transform: scale(1.03);
+}
+
+.project-card:hover .project-image--contain {
+  transform: scale(1.01);
+}
+
 .project-card:hover .project-media img {
   opacity: 1;
-  transform: scale(1.03);
 }
 
 .project-media-overlay {
@@ -448,14 +470,14 @@ h1 {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(180deg, rgba(3, 7, 18, 0.04) 0%, rgba(3, 7, 18, 0.14) 58%, rgba(3, 7, 18, 0.32) 100%),
-    radial-gradient(circle at 50% 0%, rgba(143, 180, 255, 0.12), transparent 56%);
-  opacity: 0.72;
+    linear-gradient(180deg, rgba(3, 7, 18, 0.02) 0%, rgba(3, 7, 18, 0.08) 58%, rgba(3, 7, 18, 0.2) 100%),
+    radial-gradient(circle at 50% 0%, rgba(143, 180, 255, 0.08), transparent 56%);
+  opacity: 0.5;
   transition: opacity 220ms ease;
 }
 
 .project-card:hover .project-media-overlay {
-  opacity: 0.56;
+  opacity: 0.38;
 }
 
 .project-status-badge {
@@ -481,34 +503,26 @@ h1 {
 
 .project-coming-soon {
   position: absolute;
-  inset: 0;
+  bottom: 16px;
+  left: 16px;
   z-index: 2;
-  display: grid;
-  place-items: center;
-  padding: 24px;
+  display: inline-flex;
+  align-items: center;
+  max-width: calc(100% - 32px);
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
   color: #fffaf2;
-  background: rgba(4, 8, 16, 0.1);
-  backdrop-filter: blur(0.6px);
-  font-size: clamp(1rem, 1.7vw, 1.28rem);
+  background: rgba(12, 17, 27, 0.42);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  font-size: 0.76rem;
   font-weight: 900;
-  letter-spacing: -0.03em;
-  text-align: center;
-  text-shadow: 0 10px 32px rgba(0, 0, 0, 0.56);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-.project-coming-soon-icon {
-  display: grid;
-  width: 40px;
-  height: 40px;
-  margin: 0 auto 12px;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.11);
-  box-shadow: 0 0 30px rgba(231, 177, 111, 0.18);
-  color: #ffe2ad;
-  font-size: 1.1rem;
-}
 
 .project-content {
   display: flex;
@@ -571,6 +585,44 @@ h1 {
   color: var(--color-text);
   background: var(--color-primary-soft);
   transform: translateY(-1px);
+}
+
+.technical-highlights-section {
+  background:
+    radial-gradient(circle at top right, var(--hero-accent), transparent 28rem),
+    var(--color-background);
+}
+
+.technical-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.technical-highlights-grid li {
+  position: relative;
+  padding: 16px 18px 16px 42px;
+  border: 1px solid rgba(143, 180, 255, 0.16);
+  border-radius: 20px;
+  color: var(--color-text-muted);
+  background: rgba(var(--color-background-rgb), 0.3);
+  box-shadow: var(--shadow-soft);
+  font-weight: 700;
+}
+
+.technical-highlights-grid li::before {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 18px var(--color-primary-soft);
+  content: '';
 }
 
 .skills-groups {
@@ -639,19 +691,41 @@ h1 {
 }
 
 .site-footer {
-  padding: 28px 0;
+  padding: 34px 0;
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
   color: var(--color-text-muted);
   font-size: 0.95rem;
 }
 
-.site-footer p {
+.footer-content {
+  align-items: flex-start;
+}
+
+.footer-profile,
+.footer-meta,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-profile p {
   margin: 0;
 }
 
+.footer-name,
 .site-footer a {
+  color: var(--color-text);
   font-weight: 800;
+}
+
+.footer-links {
+  align-items: flex-end;
+}
+
+.footer-meta {
+  text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -690,9 +764,14 @@ h1 {
   }
 
   .section-grid,
-  .projects-grid {
+  .projects-grid,
+  .technical-highlights-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .technical-highlights-grid {
+    gap: 12px;
   }
 
   .project-card {
@@ -706,6 +785,13 @@ h1 {
   .project-media {
     height: clamp(230px, 54vw, 320px);
   }
+
+  .footer-content,
+  .footer-links,
+  .footer-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 
 @media (max-width: 520px) {
@@ -716,6 +802,10 @@ h1 {
   .nav-links {
     overflow-x: auto;
     padding-bottom: 4px;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 12vw, 3.4rem);
   }
 
   .hero-description {

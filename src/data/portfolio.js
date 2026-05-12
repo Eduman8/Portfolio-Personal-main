@@ -3,13 +3,14 @@ export const projects = [
     title: '#HARTA',
     stack: ['React', 'Node.js', 'Express', 'PostgreSQL'],
     description:
-      'Full-stack e-commerce platform for a beverageware brand, including product catalog, authentication, cart, checkout flow, admin dashboard, stock management and Mercado Pago integration.',
+      'Full-stack e-commerce platform for a beverageware brand, featuring authentication, product and category management, cart and checkout flows, admin order management, stock control and Mercado Pago integration.',
     demoUrl: '', // Add the public #HARTA demo URL here when it is ready.
     githubUrl: 'https://github.com/Eduman8/-Harta-web',
     image: 'https://res.cloudinary.com/dbkfkpjjl/image/upload/v1778620946/Screenshot_2026-05-12_182148_p0hr6m.png', // Replace this path with the final #HARTA screenshot.
+    imageFit: 'cover',
+    imagePosition: 'center top',
     status: 'In Development',
-    overlayLabel: 'Live Demo Coming Soon',
-    overlayIcon: '✦',
+    overlayLabel: 'Live Demo • Coming Soon',
     demoLabel: 'Coming Soon',
     demoAvailable: false,
   },
@@ -21,10 +22,22 @@ export const projects = [
     demoUrl: 'https://countries-nine-liard.vercel.app/',
     githubUrl: 'https://github.com/Eduman8/PI-Countries',
     image: 'https://res.cloudinary.com/dbkfkpjjl/image/upload/v1778621409/Screenshot_2026-05-12_at_18-29-40_Henry_Countries_cytolr.png',
-    imagePosition: 'center 16%',
+    imageFit: 'contain',
+    imagePosition: 'top center',
     demoLabel: 'Live Demo',
     demoAvailable: true,
   },
+];
+
+export const technicalHighlights = [
+  'JWT authentication and protected routes',
+  'Role-based admin dashboards',
+  'Product, category, cart and order flows',
+  'Mercado Pago checkout and webhook handling',
+  'PostgreSQL relational data modeling',
+  'REST API architecture with Node.js and Express',
+  'Responsive interfaces with React and CSS',
+  'Search, filtering, sorting and pagination',
 ];
 
 export const skillGroups = [

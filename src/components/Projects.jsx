@@ -18,6 +18,7 @@ function Projects() {
             <article className="project-card" key={project.title}>
               <div className="project-media">
                 <img
+                  className={`project-image project-image--${project.imageFit ?? 'cover'}`}
                   src={project.image}
                   alt={`${project.title} project preview`}
                   style={{ objectPosition: project.imagePosition }}
@@ -28,9 +29,6 @@ function Projects() {
                 ) : null}
                 {project.overlayLabel ? (
                   <div className="project-coming-soon">
-                    <span className="project-coming-soon-icon" aria-hidden="true">
-                      {project.overlayIcon}
-                    </span>
                     <span>{project.overlayLabel}</span>
                   </div>
                 ) : null}
