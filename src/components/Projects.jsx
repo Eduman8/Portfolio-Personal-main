@@ -8,8 +8,8 @@ function Projects() {
           <p className="section-label">Projects</p>
           <h2>Selected work</h2>
           <p>
-            Two projects that show my experience with React interfaces,
-            full-stack application flows and API-driven features.
+            Selected projects that show my experience building real interfaces,
+            full-stack flows, API integrations and production-oriented features.
           </p>
         </div>
 
@@ -18,23 +18,23 @@ function Projects() {
             <article className="project-card" key={project.title}>
               <div className="project-media">
                 <img
+                  className={`project-image project-image--${project.imageFit ?? 'cover'}`}
                   src={project.image}
                   alt={`${project.title} project preview`}
                   style={{ objectPosition: project.imagePosition }}
                 />
                 <div className="project-media-overlay" aria-hidden="true" />
-                {project.status ? <span className="project-status-badge">{project.status}</span> : null}
+                {project.status ? (
+                  <span className="project-status-badge">{project.status}</span>
+                ) : null}
                 {project.overlayLabel ? (
                   <div className="project-coming-soon">
-                    <span className="project-coming-soon-icon" aria-hidden="true">
-                      {project.overlayIcon}
-                    </span>
                     <span>{project.overlayLabel}</span>
                   </div>
                 ) : null}
               </div>
               <div className="project-content">
-                <div>
+                <div className="project-copy">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
                 </div>
@@ -44,14 +44,18 @@ function Projects() {
                   ))}
                 </ul>
                 <div className="project-links">
-                  {project.demoAvailable ? (
-                    <a href={project.demoUrl}>{project.demoLabel}</a>
+                  {project.demoAvailable && project.demoUrl ? (
+                    <a href={project.demoUrl} target="_blank" rel="noreferrer">
+                      {project.demoLabel}
+                    </a>
                   ) : (
                     <span className="project-link-disabled" aria-disabled="true">
                       {project.demoLabel}
                     </span>
                   )}
-                  <a href={project.githubUrl}>GitHub</a>
+                  <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
                 </div>
               </div>
             </article>

@@ -1,3 +1,5 @@
+const heroHighlights = ['React', 'Node.js', 'PostgreSQL', 'REST APIs'];
+
 function Hero() {
   return (
     <section id="top" className="hero section">
@@ -6,8 +8,8 @@ function Hero() {
         <h1>Hi, I&apos;m Eduardo Gómez</h1>
         <h2>Junior Front-End / Full-Stack Developer</h2>
         <p className="hero-description">
-          I build clean, responsive and functional web applications using React,
-          Node.js and PostgreSQL.
+          I build practical, responsive and maintainable web applications with
+          React, Node.js and PostgreSQL.
         </p>
         <div className="hero-actions" aria-label="Portfolio actions">
           <a className="button button-primary" href="#projects">
@@ -17,6 +19,11 @@ function Hero() {
             Contact Me
           </a>
         </div>
+        <ul className="hero-highlights" aria-label="Core technologies">
+          {heroHighlights.map((highlight) => (
+            <li key={highlight}>{highlight}</li>
+          ))}
+        </ul>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import { skills } from '../data/portfolio.js';
+import { skillGroups } from '../data/portfolio.js';
 
 function Skills() {
   return (
@@ -8,11 +8,18 @@ function Skills() {
           <p className="section-label">Skills</p>
           <h2>Technologies I use to build web applications.</h2>
         </div>
-        <ul className="skills-list" aria-label="Technical skills">
-          {skills.map((skill) => (
-            <li key={skill}>{skill}</li>
+        <div className="skills-groups" aria-label="Technical skills by category">
+          {skillGroups.map((group) => (
+            <div className="skills-group" key={group.label}>
+              <h3>{group.label}</h3>
+              <ul className="skills-list">
+                {group.skills.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
