@@ -1,0 +1,30 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI Study Assistant project preview</title>
+  <desc id="desc">Concept preview for an AI-powered study sessions dashboard in development.</desc>
+  <rect width="960" height="600" rx="32" fill="#101827"/>
+  <circle cx="186" cy="126" r="210" fill="#2563EB" opacity="0.28"/>
+  <circle cx="792" cy="474" r="260" fill="#8FB4FF" opacity="0.18"/>
+  <rect x="72" y="64" width="816" height="472" rx="34" fill="#F8FAFC"/>
+  <rect x="104" y="104" width="752" height="72" rx="22" fill="#172033"/>
+  <circle cx="144" cy="140" r="14" fill="#8FB4FF"/>
+  <rect x="174" y="128" width="188" height="18" rx="9" fill="#EEF4FB"/>
+  <rect x="678" y="124" width="132" height="32" rx="16" fill="#2563EB"/>
+  <rect x="122" y="216" width="292" height="236" rx="26" fill="#EEF3F8"/>
+  <rect x="154" y="250" width="174" height="18" rx="9" fill="#172033"/>
+  <rect x="154" y="292" width="226" height="14" rx="7" fill="#98A4B3"/>
+  <rect x="154" y="326" width="198" height="14" rx="7" fill="#CBD3DD"/>
+  <rect x="154" y="374" width="108" height="44" rx="14" fill="#2563EB"/>
+  <path d="M284 394h70" stroke="#8FB4FF" stroke-width="12" stroke-linecap="round"/>
+  <rect x="454" y="216" width="384" height="110" rx="26" fill="#EEF3F8"/>
+  <rect x="488" y="250" width="198" height="16" rx="8" fill="#172033"/>
+  <rect x="488" y="286" width="294" height="12" rx="6" fill="#CBD3DD"/>
+  <rect x="454" y="356" width="178" height="96" rx="24" fill="#DBEAFE"/>
+  <rect x="484" y="384" width="76" height="14" rx="7" fill="#2563EB"/>
+  <rect x="484" y="414" width="112" height="12" rx="6" fill="#8FB4FF"/>
+  <rect x="660" y="356" width="178" height="96" rx="24" fill="#E0E7FF"/>
+  <rect x="690" y="384" width="92" height="14" rx="7" fill="#2563EB"/>
+  <rect x="690" y="414" width="104" height="12" rx="6" fill="#8FB4FF"/>
+  <path d="M724 124c22 12 38 28 48 50" stroke="#8FB4FF" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  <path d="M705 130c18 10 30 23 38 40" stroke="#EEF4FB" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <rect x="124" y="480" width="712" height="22" rx="11" fill="#D8E1EB"/>
+</svg>
