@@ -9,23 +9,7 @@ export const projects = [
     image: 'https://res.cloudinary.com/dbkfkpjjl/image/upload/v1778620946/Screenshot_2026-05-12_182148_p0hr6m.png', // Replace this path with the final #HARTA screenshot.
     imageFit: 'cover',
     imagePosition: 'center top',
-    status: 'In Development',
-    overlayLabel: 'Live Demo • Coming Soon',
-    demoLabel: 'Coming Soon',
-  },
-
-  {
-    title: 'AI Study Assistant',
-    stack: ['React', 'JavaScript', 'Node.js', 'OpenAI API', 'PostgreSQL'],
-    description:
-      'Aplicación en desarrollo enfocada en ayudar a estudiantes a organizar sesiones de estudio, generar resúmenes, practicar preguntas y mejorar la constancia mediante herramientas asistidas por IA.',
-    demoUrl: '',
-    githubUrl: '',
-    image: '/ai-study-assistant-preview.svg',
-    imageFit: 'cover',
-    imagePosition: 'center',
-    status: 'En desarrollo',
-    overlayLabel: 'Work in Progress',
+    status: 'WORK IN PROGRESS',
   },
   {
     title: 'Countries PI',
@@ -38,6 +22,18 @@ export const projects = [
     imageFit: 'contain',
     imagePosition: 'top center',
     demoLabel: 'Live Demo',
+  },
+  {
+    title: 'AI Study Assistant',
+    stack: ['React', 'JavaScript', 'Node.js', 'OpenAI API', 'PostgreSQL'],
+    description:
+      'Application currently in development focused on helping students organize study sessions, generate summaries, practice questions, and improve consistency using AI-assisted tools.',
+    demoUrl: '',
+    githubUrl: '',
+    image: '/ai-study-assistant-preview.svg',
+    imageFit: 'cover',
+    imagePosition: 'center',
+    status: 'WORK IN PROGRESS',
   },
 ];
 
