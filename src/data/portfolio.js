@@ -1,7 +1,16 @@
 export const projects = [
   {
     title: '#HARTA',
-    stack: ['React', 'Node.js', 'Express', 'PostgreSQL'],
+    stack: [
+      'React',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'JWT',
+      'Mercado Pago',
+      'REST API',
+      'Responsive UI',
+    ],
     description:
       'Full-stack e-commerce platform for a beverageware brand, featuring authentication, product and category management, cart and checkout flows, admin order management, stock control and Mercado Pago integration.',
     demoUrl: '', // Add the public #HARTA demo URL here when it is ready.
@@ -13,7 +22,15 @@ export const projects = [
   },
   {
     title: 'Countries PI',
-    stack: ['React', 'Redux', 'CSS', 'REST API'],
+    stack: [
+      'React',
+      'Redux',
+      'JavaScript',
+      'REST API',
+      'CSS Modules',
+      'Express',
+      'PostgreSQL',
+    ],
     description:
       'Country explorer built with React, Redux and REST API integration, featuring search, filters, sorting, pagination, detail pages and tourist activity creation.',
     demoUrl: 'https://countries-nine-liard.vercel.app/',
@@ -25,7 +42,7 @@ export const projects = [
   },
   {
     title: 'AI Study Assistant',
-    stack: ['React', 'JavaScript', 'Node.js', 'OpenAI API', 'PostgreSQL'],
+    stack: ['React', 'Node.js', 'OpenAI API', 'PostgreSQL', 'AI Tools'],
     description:
       'Application currently in development focused on helping students organize study sessions, generate summaries, practice questions, and improve consistency using AI-assisted tools.',
     demoUrl: '',
