@@ -68,15 +68,40 @@ export const technicalHighlights = [
 export const skillGroups = [
   {
     label: 'Frontend',
-    skills: ['JavaScript', 'React', 'Redux', 'HTML', 'CSS', 'Responsive Design'],
+    skills: [
+      'JavaScript',
+      'React',
+      'Redux',
+      'Vite',
+      'React Router',
+      'Context API',
+      'HTML',
+      'CSS',
+      'Responsive Design',
+      'UI/UX',
+      'Dark Mode',
+      'Accessibility',
+    ],
   },
   {
     label: 'Backend',
-    skills: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL'],
+    skills: [
+      'Node.js',
+      'Express',
+      'REST APIs',
+      'PostgreSQL',
+      'SQL',
+      'JWT Authentication',
+      'Google Auth',
+      'Mercado Pago API',
+      'API Integration',
+      'Role-Based Access',
+      'Webhooks',
+    ],
   },
   {
     label: 'Tools',
-    skills: ['Git', 'GitHub'],
+    skills: ['Git', 'GitHub', 'Scrum', 'Agile', 'VS Code', 'Postman', 'npm', 'Vercel'],
   },
 ];
 

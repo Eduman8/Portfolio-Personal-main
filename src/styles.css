@@ -629,6 +629,7 @@ h1 {
 
 .skills-groups {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -637,6 +638,16 @@ h1 {
   border: 1px solid var(--color-border);
   border-radius: 22px;
   background: rgba(var(--color-background-rgb), 0.28);
+  box-shadow: var(--shadow-soft);
+}
+
+.skills-group--primary {
+  border-color: rgba(143, 180, 255, 0.2);
+}
+
+.skills-group--secondary {
+  grid-column: 1 / -1;
+  background: rgba(var(--color-background-rgb), 0.2);
 }
 
 .skills-group h3 {
@@ -649,7 +660,12 @@ h1 {
 }
 
 .skills-list li {
-  padding: 8px 13px;
+  padding: 7px 11px;
+  line-height: 1.25;
+}
+
+.skills-group--secondary .skills-list li {
+  font-size: 0.86rem;
 }
 
 .project-links {
@@ -840,8 +856,13 @@ h1 {
     gap: 32px;
   }
 
-  .technical-highlights-grid {
+  .technical-highlights-grid,
+  .skills-groups {
     gap: 12px;
+  }
+
+  .skills-groups {
+    grid-template-columns: 1fr;
   }
 
   .project-card {
