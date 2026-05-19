@@ -9,16 +9,20 @@ function Skills() {
           <h2>Technologies I use to build web applications.</h2>
         </div>
         <div className="skills-groups" aria-label="Technical skills by category">
-          {skillGroups.map((group) => (
-            <div className="skills-group" key={group.label}>
-              <h3>{group.label}</h3>
-              <ul className="skills-list">
-                {group.skills.map((skill) => (
-                  <li key={skill}>{skill}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {skillGroups.map((group) => {
+            const groupType = group.label === 'Tools' ? 'secondary' : 'primary';
+
+            return (
+              <div className={`skills-group skills-group--${groupType}`} key={group.label}>
+                <h3>{group.label}</h3>
+                <ul className="skills-list">
+                  {group.skills.map((skill) => (
+                    <li key={skill}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
