@@ -41,7 +41,8 @@ function Header() {
     <header className="site-header">
       <nav className="container nav" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="Eduardo Gómez home">
-          Eduardo Gómez
+          <img className="brand-logo" src="/favicon.png" alt="EG logo" width="34" height="34" />
+          <span>Eduardo Gómez</span>
         </a>
         <div className="nav-actions">
           <div className="nav-links">
